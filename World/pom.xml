@@ -8,7 +8,7 @@
     <artifactId>World</artifactId>
     <version>1.0</version>
 
-<!--  通过maven统一jdk版本：-->
+<!--  通过maven统一(依赖版的)jdk版本：-->
     <profiles>
         <profile>
             <id>jdk-17</id>
@@ -17,12 +17,14 @@
                 <jdk>17</jdk>
             </activation>
             <properties>
-                <maven.compiler.source>1.8</maven.compiler.source>
-                <maven.compiler.target>1.8</maven.compiler.target>
-                <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+                <maven.compiler.source>17</maven.compiler.source>
+                <maven.compiler.target>17</maven.compiler.target>
+                <maven.compiler.compilerVersion>17</maven.compiler.compilerVersion>
             </properties>
         </profile>
     </profiles>
+
+
     <!-- 统一依赖包版本   -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

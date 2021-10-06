@@ -22,7 +22,9 @@
     </dependencyManagement>
 
 
-    <!-- <四、项目间的聚合依赖>聚合的项目 -->
+    <!-- <四、项目间的聚合依赖>聚合的项目，
+        无需install安装需要依赖的项目
+     -->
     <modules>
         <module>Maven1</module>
         <module>Maven2</module>

@@ -14,7 +14,7 @@
     </properties>
 
     <dependencies>
-        <!--  Maven2依赖于Maven1项目      -->
+        <!--  Maven2依赖于Maven1项目,先install安装Maven1      -->
         <dependency>
             <groupId>org.legend.projectName</groupId>
             <artifactId>Maven1</artifactId>

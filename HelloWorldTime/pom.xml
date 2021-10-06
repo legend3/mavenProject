@@ -22,7 +22,7 @@
             <artifactId>Hello</artifactId>
             <version>1.0</version>
         </dependency>
-        <!-- <二、项目间的依赖，需要install！>本项目依赖的HelloWorld2项目 -->
+        <!-- <二、项目间的依赖，需要install！>本项目依赖的HelloWorld2项目(其中包含了testng依赖包) -->
         <dependency>
             <groupId>org.legend.projectName</groupId>
             <artifactId>HelloWorld2</artifactId>
