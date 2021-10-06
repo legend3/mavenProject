@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.legend.projectName</groupId>
+    <artifactId>HelloWorldTime</artifactId>
+    <version>1.0</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <!-- (先)本项目  依赖的HelloWorld2项目
+         4.依赖原则：为了防止冲突:
+            ii.如果是不同的 pom.xml中有2个相同的依赖（优先）：则先声明的依赖 ，会覆盖后声明的依赖
+            commons-io:2.3
+         -->
+        <dependency>
+            <groupId>org.legend.projectName</groupId>
+            <artifactId>Hello</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!-- <二、项目间的依赖，需要install！>本项目依赖的HelloWorld2项目 -->
+        <dependency>
+            <groupId>org.legend.projectName</groupId>
+            <artifactId>HelloWorld2</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+<!--   后面声明的依赖 会覆盖前面声明的依赖（严禁使用本情况，严禁在同一个pom中声明2个版本不同的依赖）     -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>

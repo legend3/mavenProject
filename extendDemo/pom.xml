@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.legend.projectName</groupId>
+    <artifactId>extendDemo</artifactId>
+    <version>1.0</version>
+
+    <name>extendDemo</name>
+
+
+    <!--   <三、父子之间的依赖> 给子工程继承一个父工程：1加入父工程的坐标gav 2当前工程pom.xml到父工程的pom.xml的相对路径-->
+    <parent>
+        <!--  1加入父工程的坐标gav  -->
+        <groupId>org.legend.projectName</groupId>
+        <artifactId>mavenProject</artifactId>
+        <version>1.0</version>
+        <!--  2当前工程pom.xml到父工程的pom.xml的相对路径   -->
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <!-- 继承父类哪些依赖包(其实也有方便管理依赖的作用！)   -->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+</project>

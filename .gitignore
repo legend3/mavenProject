@@ -1,0 +1,5 @@
+# Project exclude paths
+/Hello/target/
+/HelloWorld/target/
+/HelloWorld2/target/
+/HelloWorldTime/target/
