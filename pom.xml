@@ -6,6 +6,7 @@
     <groupId>org.legend.projectName</groupId>
     <artifactId>mavenProject</artifactId>
     <version>1.0</version>
+    <!--  父工程的打包方式为pom  -->
     <packaging>pom</packaging>
 
 <!--父类工程，父类的依赖写在dependencyManagement中-->
