@@ -31,7 +31,7 @@
     </modules>
 
     <build>
-        <finalName>mavenWeb</finalName>
+        <finalName>mavenProject</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
